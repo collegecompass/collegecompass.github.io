@@ -1,0 +1,93 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.navbar-left {
+    font-size: 1.5em;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header-content {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content h1 {
+    font-size: 3em;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    letter-spacing: 2px;
+    color: brown;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px 20px;
+}
+
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
